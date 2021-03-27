@@ -1,0 +1,404 @@
+#header {
+    background-size: cover;
+    background-image: url(../img/full_zaba.png);
+    height: calc(100vh - 106px);
+}
+
+#body {
+    box-shadow: inset 0px 1px 15px 0px rgba(36, 91, 95, 0.75);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 30%, 30%, cover;
+    background-position: 0 50%, 100% 50%, top;
+    background-image: url(../img/vibey_bust.png), url(../img/vibey_bust.png), url(../img/potential_bg_question_mark.jpg);
+    transition: opacity 2s, background-position 2s;
+}
+
+#navbar nav img {
+    width: 80px;
+    height: 80px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #472b41 !important;
+}
+
+.navbar-brand {
+    font-size: 1.9em;
+    font-family: "Amatic SC", cursive;
+}
+
+.navbar-brand:hover span {
+    color: #efa10a;
+}
+
+.nav {
+    font-family: "Amatic SC", cursive;
+    font-size: 1.5em;
+    color: white;
+}
+
+.nav a {
+    color: inherit;
+}
+
+.nav a:hover {
+    color: #efa10a;
+}
+
+.maxWidth {
+    max-width: 60vw;
+    margin: auto;
+}
+
+.panneau {
+    border-left: 2px solid #245b5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    position: relative;
+    flex: 1;
+}
+
+.panneau:last-child {
+    border-right: 2px solid #245b5f;
+}
+
+.panneau:hover {
+    backdrop-filter: sepia(60%);
+}
+
+.panneau:hover .cercle {
+    filter: grayscale(0%);
+}
+
+.cercle {
+    border: 2px solid #581f3b;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 90px -20px rgba(0, 0, 0, 0.75);
+    position: relative;
+    transition: all 1s;
+    z-index: 1;
+    top: -15%;
+    filter: grayscale(100%);
+}
+
+.panneau > h1 {
+    color: #efa10a;
+    text-shadow: 2px 3px #581f3b;
+    position: absolute;
+    font-size: 1em;
+    top: 30vh;
+    visibility: hidden;
+    font-family: "Montserrat", sans-serif;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.panneau > span {
+    font-family: "Amatic SC", cursive;
+    text-shadow: 2px 3px #245b5f;
+    color: #efa10a;
+    position: absolute;
+    top: 40vh;
+    transform: translateY(-50%);
+    opacity: 0;
+    font-size: 4em;
+    transition: all 1.5s ease-out;
+}
+
+.panneau > p {
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 3px #581f3b;
+    color: #efa10a;
+    position: absolute;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    top: 55vh;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 2s;
+}
+
+.panneau:hover > h1 {
+    visibility: visible;
+    top: 43vh;
+    font-size: 1.2em;
+    opacity: 100%;
+}
+
+.panneau:nth-of-type(1) .cercle {
+    background-size: 700px;
+    background-position: 0% 35%;
+    background-image: url(../img/milk_boys.jpg);
+}
+
+.panneau:nth-of-type(2) .cercle {
+    background-size: 780px;
+    background-position: 35% 22%;
+    background-image: url(../img/milk_boys.jpg);
+}
+
+.panneau:nth-of-type(3) .cercle {
+    background-size: 720px;
+    background-position: 59% 31%;
+    background-image: url(../img/milk_boys.jpg);
+}
+
+.panneau:nth-of-type(4) .cercle {
+    background-size: 740px;
+    background-position: 89% 34%;
+    background-image: url(../img/milk_boys.jpg);
+}
+
+.flexMe {
+    background-size: cover;
+    backdrop-filter: sepia(50%);
+    flex: 5;
+}
+
+.flexMe .cercle {
+    height: 200px;
+    width: 200px;
+    top: -30%;
+    filter: grayscale(0%);
+    border: 2px solid rgba(239, 161, 10, 0.5);
+}
+
+.flexMe h1 {
+    visibility: visible;
+    top: 30vh;
+    font-size: 2em;
+    opacity: 100%;
+}
+
+.flexMe:hover h1 {
+    top: 30vh;
+    font-size: 2em;
+}
+
+.flexMe > span {
+    transform: translateY(0%);
+    opacity: 100%;
+}
+
+.flexMe > p {
+    transform: translateY(0%);
+    opacity: 100%;
+}
+
+.hideMe {
+    visibility: hidden;
+}
+
+.card {
+    border: none;
+    box-shadow: 5px 7px #00ffe6;
+    transition: box-shadow 300ms;
+}
+
+.card:hover {
+    box-shadow: -5px 7px #fbff21;
+}
+
+.slider:nth-of-type(1n) {
+    transform: translateX(-100%);
+}
+
+.slider:nth-of-type(2n) {
+    transform: translateX(100%);
+}
+
+.slider {
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 1px 1px #efa10a;
+    color: #a46acb;
+    opacity: 0;
+    overflow: hidden;
+    padding-bottom: 30px;
+    transition: all 1.5s ease-out;
+}
+
+.price {
+    color: #efa10a;
+    text-shadow: 1px 1px #a46acb;
+}
+
+.card-body {
+    background-color: #dac9fc;
+}
+
+.slid {
+    opacity: 100%;
+    transform: translate(0) !important;
+}
+
+.fas {
+    color: #00ffe6;
+    text-shadow: 1px 1px #fbff21;
+    font-size: 2em;
+    position: absolute;
+    top: 17%;
+    transition: all 250ms;
+}
+
+.fa-arrow-left {
+    left: 3%;
+}
+
+.fa-arrow-right {
+    right: 3%;
+}
+
+.fas:hover {
+    color: #fbff21;
+    text-shadow: 1px 1px #00ffe6;
+    cursor: pointer;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vh;
+    display: none;
+    object-position: center;
+    object-fit: cover;
+    background-color: #6bbfd7;
+}
+
+.visible {
+    display: block;
+}
+
+.cardBtn {
+    color: gray;
+    text-shadow: none;
+    border: 1px solid rgba(39, 32, 46, 0.35);
+    padding: 6px;
+    border-radius: 3%;
+    min-width: 30px;
+    background-color: transparent;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.cardBtn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.cardBtn:hover {
+    cursor: pointer;
+    background: linear-gradient(270deg, #fec9bf, #ec5093, #64cc91, #00ffe6);
+    background-size: 1000% 1000%;
+    /* animation: glowing 400ms infinite; */
+    animation: gradientSwipe 4s ease infinite;
+}
+
+@keyframes gradientSwipe {
+    0% {
+        text-shadow: -1px -1px #c938ce;
+        background-position: 0% 50%;
+    }
+    25% {
+        text-shadow: -1px -1px #47ece4;
+    }
+    50% {
+        text-shadow: 1px -1px #38ce38;
+        background-position: 100% 50%;
+    }
+    75% {
+        text-shadow: -1px -1px #47ece4;
+    }
+    100% {
+        text-shadow: 1px 1px #c938ce;
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes glowing {
+    0% {
+        color: blue;
+        text-shadow: -1px 1px #c938ce;
+        background-color: #fffb00;
+    }
+    25% {
+        text-shadow: 1px -1px #38ce38;
+        background-color: #00ffe6;
+    }
+    50% {
+        color: indianred;
+        text-shadow: -1px 1px #c938ce;
+        background-color: #00ffab;
+    }
+    75% {
+        color: steelblue;
+        text-shadow: 1px -1px #38ce38;
+        background-color: #e7dee6;
+    }
+    100% {
+        text-shadow: -1px -1px #47ece4;
+        background-color: #fffb00;
+    }
+}
+
+.minus,
+.plus {
+    border: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.quant {
+    display: flex;
+}
+
+.quant input {
+    max-width: 30px;
+}
+
+.openCart {
+    position: absolute;
+    opacity: 0%;
+    bottom: -100px;
+    transition: all 1s ease-out;
+}
+
+.openCartDeploy {
+    opacity: 100%;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    z-index: 20;
+    background-color: #0bb2dc;
+    color: white;
+}
+
+@media screen and (max-width: 1140px) {
+    #body {
+        background-image: url(../img/potential_bg_question_mark.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .addCart {
+        font-size: 0.8em;
+    }
+
+    .card-text {
+        font-size: 0.8em;
+    }
+}

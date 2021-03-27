@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+            integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+            crossorigin="anonymous"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Glass Animals</title>
+    </head>
+    <body>
+        <div id="navbar">
+            <nav class="navbar navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="img/grey-seed.gif" alt="" />
+                    <span>Glass Animals</span>
+                </a>
+                <div>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#body" class="nav-link">Zaba</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#body" class="nav-link">How to Be a Human Being</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#body" class="nav-link">Dreamland</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid" id="header">
+            <div class="h-100 maxWidth" id="innerHeader">
+                <div class="row h-100 panneaux">
+                    <div class="panneau">
+                        <div class="cercle"></div>
+                        <h1>Ed Irwin-Singer</h1>
+                        <span class="hideMe">BIO</span>
+                        <p class="hideMe">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil a consectetur neque praesentium molestiae sed sit
+                            provident mollitia debitis dolore omnis illo tempore vitae dignissimos officiis dicta veritatis deserunt pariatur tenetur,
+                            voluptatibus distinctio nostrum aliquam vel porro? Aperiam esse consequatur a dolorem impedit voluptas natus distinctio.
+                            Pariatur excepturi eligendi maiores!
+                        </p>
+                    </div>
+                    <div class="panneau">
+                        <div class="cercle"></div>
+                        <h1>Joe Seaward</h1>
+                        <span class="hideMe">BIO</span>
+                        <p class="hideMe">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum esse magnam porro iure distinctio quos neque. Corrupti
+                            libero eligendi temporibus placeat animi provident recusandae assumenda maxime reprehenderit? Nobis voluptatem saepe sed
+                            harum placeat natus laborum incidunt exercitationem inventore. Voluptates, ipsum? A sapiente dolore doloremque. Ipsum
+                            impedit magnam aliquid error ducimus?
+                        </p>
+                    </div>
+                    <div class="panneau">
+                        <div class="cercle"></div>
+                        <h1>Dave Bayley</h1>
+                        <span class="hideMe">BIO</span>
+                        <p class="hideMe">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem assumenda aut impedit quam dolore quia odit voluptate
+                            doloremque voluptatem ex repudiandae quae inventore quos sint consequuntur, commodi maiores amet ratione minima ipsum!
+                            Nobis consectetur culpa ex excepturi quia exercitationem omnis iusto, minus ducimus maiores illum magni ea autem ullam
+                            cupiditate.
+                        </p>
+                    </div>
+                    <div class="panneau">
+                        <div class="cercle"></div>
+                        <h1>Drew MacFarlane</h1>
+                        <span class="hideMe">BIO</span>
+                        <p class="hideMe">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad facilis maxime alias excepturi nihil! Saepe repellendus ut
+                            nisi at quo blanditiis ipsa dolorum nam alias culpa! Ea harum dolorum iure quia corrupti a quisquam omnis eos consequatur
+                            non atque dignissimos, suscipit soluta, dolores unde tempora vero doloribus officia iusto ad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="body">
+            <button class="openCart cardBtn" data-toggle="modal" data-target="#cartModal">Check Cart</button>
+            <div class="modal fade" id="cartModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">My Cart</h5>
+                            <button type="button" class="close" data-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table">
+                                <thead>
+                                    <th>Product:</th>
+                                    <th>Price:</th>
+                                    <th>QTY:</th>
+                                    <th>Sub-Total:</th>
+                                    <th>Delete:</th>
+                                </thead>
+                                <tbody id="cartBody"></tbody>
+                            </table>
+                            <h4 class="total text-right"></h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-100 align-items-center justify-content-around text-center pt-5">
+                <div class="col-5 col-lg-4 col-xl-2 slider">
+                    <div class="card">
+                        <i class="fas fa-arrow-left"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <img class="card-img-top visible" src="./img/products/your_love_small.jpg" />
+                        <img class="card-img-top" src="./img/products/zaba_small_alt.jpg" />
+                        <img class="card-img-top" src="./img/milk_boys_small.jpg" />
+                        <img class="card-img-top" src="./img/vibey_bust.png" />
+                        <div class="card-body">
+                            <h5 class="card-title">Your Love - <span class="price">2€</span></h5>
+                            <p class="card-text">
+                                “Your Love,” described as a “conflicted booty-call anthem,” is about toxic relationships that you know are bad for you
+                                but can’t seem to cut off.
+                            </p>
+                            <div class="quant justify-content-center">
+                                <button type="button" class="cardBtn minus">-</button>
+                                <input type="number" class="quantInput" size="1" value="1" />
+                                <button type="button" class="cardBtn plus">+</button>
+                                <a class="cardBtn addCart ml-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-4 col-xl-2 slider">
+                    <div class="card">
+                        <i class="fas fa-arrow-left"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <img class="card-img-top visible" src="./img/products/zaba_small_alt.jpg" />
+                        <img class="card-img-top" src="./img/products/zaba_small_alt.jpg" />
+                        <img class="card-img-top" src="./img/milk_boys_small.jpg" />
+                        <img class="card-img-top" src="./img/vibey_bust.png" />
+                        <div class="card-body">
+                            <h5 class="card-title">Zaba - <span class="price">6€</span></h5>
+                            <p class="card-text">
+                                Zaba is the debut studio album by Glass Animals, released on 9 June 2014 by Wolf Tone/Caroline International.
+                            </p>
+                            <div class="quant justify-content-center">
+                                <button type="button" class="btn cardBtn minus">-</button>
+                                <input type="number" class="quantInput" size="1" value="1" />
+                                <button type="button" class="btn cardBtn plus">+</button>
+                                <a class="cardBtn addCart ml-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="w-100"></span>
+                <div class="col-5 col-lg-4 col-xl-2 slider">
+                    <div class="card">
+                        <i class="fas fa-arrow-left"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <img class="card-img-top visible" src="./img/products/mess_small.jpg" />
+                        <img class="card-img-top" src="./img/products/zaba_small_alt.jpg" />
+                        <img class="card-img-top" src="./img/milk_boys_small.jpg" />
+                        <img class="card-img-top" src="./img/vibey_bust.png" />
+                        <div class="card-body">
+                            <h5 class="card-title">How to Be a Human Being - <span class="price">8€</span></h5>
+                            <p class="card-text">
+                                Glass Animals travels from the fantasy land of Zaba to the modern world in How to Be a Human Being. The music doesn’t
+                                get much happier.
+                            </p>
+                            <div class="quant justify-content-center">
+                                <button type="button" class="btn cardBtn minus">-</button>
+                                <input type="number" class="quantInput" size="1" value="1" />
+                                <button type="button" class="btn cardBtn plus">+</button>
+                                <a class="cardBtn addCart ml-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-4 col-xl-2 slider">
+                    <div class="card">
+                        <i class="fas fa-arrow-left"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <img class="card-img-top visible" src="./img/products/dreamland_alt_small.jpg" />
+                        <img class="card-img-top" src="./img/products/zaba_small_alt.jpg" />
+                        <img class="card-img-top" src="./img/milk_boys_small.jpg" />
+                        <img class="card-img-top" src="./img/vibey_bust.png" />
+                        <div class="card-body">
+                            <h5 class="card-title">Dreamland - <span class="price">10€</span></h5>
+                            <p class="card-text">
+                                Heavily autobiographical lyrics, a radical difference from the band's previous work. It derives musical and lyrical
+                                inspiration from Bayley's childhood in Texas.
+                            </p>
+                            <div class="quant justify-content-center">
+                                <button type="button" class="btn cardBtn minus">-</button>
+                                <input type="number" class="quantInput" size="1" value="1" />
+                                <button type="button" class="btn cardBtn plus">+</button>
+                                <a class="cardBtn addCart ml-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="w-100"></span>
+                <div class="col-5 col-lg-4 col-xl-2 slider">
+                    <div class="card">
+                        <i class="fas fa-arrow-left"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <img class="card-img-top visible" src="./img/products/zaba_small.jpg" />
+                        <img class="card-img-top" src="./img/products/zaba_small_alt.jpg" />
+                        <img class="card-img-top" src="./img/milk_boys_small.jpg" />
+                        <img class="card-img-top" src="./img/vibey_bust.png" />
+                        <div class="card-body">
+                            <h5 class="card-title">Glass Animals - <span class="price">2€</span></h5>
+                            <p class="card-text">Glass Animals are an English psychedelic pop band formed in Oxford in 2010.</p>
+                            <div class="quant justify-content-center">
+                                <button type="button" class="btn cardBtn minus">-</button>
+                                <input type="number" class="quantInput" size="1" value="1" />
+                                <button type="button" class="btn cardBtn plus">+</button>
+                                <a class="cardBtn addCart ml-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-4 col-xl-2 slider">
+                    <div class="card">
+                        <i class="fas fa-arrow-left"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <img class="card-img-top visible" src="./img/products/cocoa_hooves_small.jpg" />
+                        <img class="card-img-top" src="./img/products/zaba_small_alt.jpg" />
+                        <img class="card-img-top" src="./img/milk_boys_small.jpg" />
+                        <img class="card-img-top" src="./img/vibey_bust.png" />
+                        <div class="card-body">
+                            <h5 class="card-title">Cocoa Hooves - <span class="price">2€</span></h5>
+                            <p class="card-text">
+                                "We wanted there to be a softer song on the record, something simple and sombre that gave you a moment to breathe. And
+                                this is it."
+                            </p>
+                            <div class="quant justify-content-center">
+                                <button type="button" class="btn cardBtn minus">-</button>
+                                <input type="number" class="quantInput" size="1" value="1" />
+                                <button type="button" class="btn cardBtn plus">+</button>
+                                <a class="cardBtn addCart ml-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="w-100"></span>
+                <div class="col-5 col-lg-4 col-xl-2 slider">
+                    <div class="card">
+                        <i class="fas fa-arrow-left"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <img class="card-img-top visible" src="./img/products/tangerine.png" />
+                        <img class="card-img-top" src="./img/products/zaba_small_alt.jpg" />
+                        <img class="card-img-top" src="./img/milk_boys_small.jpg" />
+                        <img class="card-img-top" src="./img/vibey_bust.png" />
+                        <div class="card-body">
+                            <h5 class="card-title">White Tangerine - <span class="price">24€</span></h5>
+                            <p class="card-text">
+                                white heavyweight t printed with a tangerine twist on the classic thank you bags you get from the supermarket when you
+                                buy your tangerines.
+                            </p>
+                            <div class="quant justify-content-center">
+                                <button type="button" class="btn cardBtn minus">-</button>
+                                <input type="number" class="quantInput" size="1" value="1" />
+                                <button type="button" class="btn cardBtn plus">+</button>
+                                <a class="cardBtn addCart ml-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-4 col-xl-2 slider">
+                    <div class="card">
+                        <i class="fas fa-arrow-left"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <img class="card-img-top visible" src="./img/products/dave_casette.png" />
+                        <img class="card-img-top" src="./img/products/zaba_small_alt.jpg" />
+                        <img class="card-img-top" src="./img/milk_boys_small.jpg" />
+                        <img class="card-img-top" src="./img/vibey_bust.png" />
+                        <div class="card-body">
+                            <h5 class="card-title">Dreamland Dave Blue Casette - <span class="price">11€</span></h5>
+                            <p class="card-text">yo its dave…cassettesssss…did four different colourways with different heads on front.</p>
+                            <div class="quant justify-content-center">
+                                <button type="button" class="btn cardBtn minus">-</button>
+                                <input type="number" class="quantInput" size="1" value="1" />
+                                <button type="button" class="btn cardBtn plus">+</button>
+                                <a class="cardBtn addCart ml-3">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="w-100"></span>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
